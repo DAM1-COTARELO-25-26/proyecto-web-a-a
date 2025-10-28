@@ -1,5 +1,7 @@
+/* Cambio de la paleta de colores; adicción de modificadores para imagenes; corrección footer*/
+
 body {
-    background: #FFFFFF;
+    background: #FFFFFF; 
     color: #333333;
     font-family: 'Open Sans', Arial, sans-serif;
     margin: 0;
@@ -75,7 +77,6 @@ nav a:hover {
 }
 
 .categoria {
-    /* Estilos base para todas las categorías */
     background-size: cover;
     background-position: center;
     border-radius: 8px;
@@ -90,7 +91,7 @@ nav a:hover {
     justify-content: center;
 }
 
-/* Asignamos la imagen y una capa oscura a cada categoría */
+
 .running {
     background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/running.jpg');
 }
@@ -111,7 +112,7 @@ nav a:hover {
 .categoria h3 {
     color: #FFFFFF;
     font-size: 1.6em;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.5); /* Sombra para que se lea mejor */
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5); 
     margin-bottom: 10px;
 }
 
