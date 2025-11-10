@@ -13,6 +13,7 @@ header {
     background: #000000;
     padding: 30px 20px;
     text-align: center;
+    position: relative;
 }
 
 h1 {
@@ -132,4 +133,23 @@ footer {
 
 footer p {
     margin: 5px 0;
+}
+
+.login-button {
+    position: absolute;
+    top: 50%;
+    right: 30px; 
+    transform: translateY(-50%);
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9em;
+    border-radius: 5px;
+}
+
+.login-button:hover {
+    background-color: #FFFFFF;
+    color: #000000; 
 }
