@@ -22,3 +22,20 @@ La tienda incluye:
 - **Paleta:** Luna Of Gale
 
 
+### 🗺️ Mapa del Sitio
+
+La estructura de navegación del proyecto es la siguiente:
+
+* **`index.html` (Página Principal)**
+    * Contiene las secciones principales:
+        * Catálogo (Ropa, zapatillas y accesorios)
+        * Sección "Nosotros" (Por establecer en el futúro)
+        * Secciones por tipo de actividad física (Running, fitness, outdoor)
+    * Enlaza a:
+        * `login.html` (para el "Área para usuarios")
+        * `contacto.html`
+* **`login.html` (Página de Login)**
+    * Formulario de inicio de sesión o registro para usuarios.
+* **`contacto.html` (Página de Contacto)**
+    * Formulario para que los visitantes envíen consultas.
+
