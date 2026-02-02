@@ -291,3 +291,82 @@ color: #fff;
     background-color: #f0f0f0;
     margin-bottom: 15px;
 }
+.contenedor-productos {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.contenedor-productos h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.producto-card {
+    background: #fff;
+    border: 1px solid #eee;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.producto-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.producto-img {
+    width: 100%;
+    height: 200px;
+    background-color: #f0f0f0;
+    margin-bottom: 15px;
+    background-size: cover;
+    background-position: center;
+}
+
+.producto-card h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #000;
+}
+
+.producto-card p {
+    font-weight: bold;
+    font-size: 1.3em;
+    color: #333;
+    margin: 10px 0;
+}
+
+.producto-card .cta-button {
+    margin-top: auto;
+    font-size: 0.9em;
+    padding: 12px;
+}
+
+.ropa-item .producto-img {
+    background-color: #e9ecef;
+    border-radius: 4px;
+}
+
+.ropa-item h3 {
+    text-transform: capitalize;
+    font-family: 'Open Sans', sans-serif;
+    color: #222;
+}
+
+.ropa-item .cta-button {
+    border-radius: 20px;
+}
+
