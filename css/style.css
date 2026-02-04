@@ -370,3 +370,26 @@ color: #fff;
     border-radius: 20px;
 }
 
+.accesorio-item .producto-img {
+    background-color: #e2e2e2;
+    border-radius: 50%; /* Opcional: hace las imágenes de accesorios circulares */
+    width: 150px;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.accesorio-item h3 {
+    color: #444;
+    font-size: 1.1em;
+}
+
+.accesorio-item .cta-button {
+    background-color: #333;
+    border: none;
+}
+
+.accesorio-item .cta-button:hover {
+    background-color: #555;
+}
+
