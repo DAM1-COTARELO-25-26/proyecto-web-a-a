@@ -92,15 +92,15 @@ nav a:hover {
 
 
 .running {
-    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/images/running.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../images/running.jpg');
 }
 
 .fitness {
-    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/images/fitness.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../images/fitness.jpg');
 }
 
 .outdoor {
-    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/images/outdoor.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../images/outdoor.jpg');
 }
 
 .categoria:hover {
@@ -266,37 +266,6 @@ color: #fff;
     padding: 0 20px;
 }
 
-.productos-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 30px;
-}
-
-.producto-card {
-    background: #fff;
-    border: 1px solid #eee;
-    padding: 15px;
-    text-align: center;
-    transition: transform 0.3s ease;
-}
-
-.producto-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-}
-
-.producto-img {
-    width: 100%;
-    height: 200px;
-    background-color: #f0f0f0;
-    margin-bottom: 15px;
-}
-.contenedor-productos {
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 0 20px;
-}
-
 .contenedor-productos h2 {
     text-align: center;
     font-size: 2.5em;
@@ -330,7 +299,7 @@ color: #fff;
 .producto-img {
     width: 100%;
     height: 200px;
-    background-color: #f0f0f0;
+    background-color: #e9ecef;
     margin-bottom: 15px;
     background-size: cover;
     background-position: center;
@@ -356,7 +325,6 @@ color: #fff;
 }
 
 .ropa-item .producto-img {
-    background-color: #e9ecef;
     border-radius: 4px;
 }
 
@@ -371,10 +339,10 @@ color: #fff;
 }
 
 .accesorio-item .producto-img {
-    background-color: #e2e2e2;
-    border-radius: 50%; /* Opcional: hace las imágenes de accesorios circulares */
-    width: 150px;
-    height: 150px;
+    background-color: #e9ecef;
+    border-radius: 4px; 
+    width: 100%;
+    height: 200px;
     margin-left: auto;
     margin-right: auto;
 }
