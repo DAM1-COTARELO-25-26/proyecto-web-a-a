@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalogo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <categoria nombre="Zapatillas">
+        <producto id="ZAP-001" disponible="true" destacado="true">
+            <nombre>Zapatilla Running Turbo</nombre>
+            <precio moneda="EUR">89.99</precio>
+            <stock>15</stock>
+            <fechaRegistro>2025-01-10</fechaRegistro>
+            <descripcion>Calzado de alta resistencia diseñado para maratones urbanos.</descripcion>
+            <especificaciones>
+                <tallas><talla>40</talla><talla>42</talla></tallas>
+                <material>Malla transpirable</material>
+            </especificaciones>
+        </producto>
+        <producto id="ZAP-002" disponible="true" destacado="false">
+            <nombre>Zapatilla Trail Explorer</nombre>
+            <precio moneda="EUR">110.00</precio>
+            <stock>8</stock>
+            <fechaRegistro>2025-01-12</fechaRegistro>
+            <descripcion>Suela de alto agarre para terrenos técnicos.</descripcion>
+            <especificaciones>
+                <tallas><talla>41</talla><talla>43</talla></tallas>
+                <material>Gore-Tex</material>
+            </especificaciones>
+        </producto>
+        <producto id="ZAP-003" disponible="true" destacado="false">
+            <nombre>Zapatilla Indoor Court</nombre>
+            <precio moneda="EUR">65.00</precio>
+            <stock>20</stock>
+            <fechaRegistro>2025-01-15</fechaRegistro>
+            <descripcion>Especial para deportes en pista cubierta.</descripcion>
+            <especificaciones>
+                <tallas><talla>43</talla></tallas>
+                <material>Goma antideslizante</material>
+            </especificaciones>
+        </producto>
+        <producto id="ZAP-004" disponible="true" destacado="true">
+            <nombre>Zapatilla Sprint Pro</nombre>
+            <precio moneda="EUR">130.00</precio>
+            <stock>5</stock>
+            <fechaRegistro>2025-01-18</fechaRegistro>
+            <descripcion>Máxima ligereza para velocistas.</descripcion>
+            <especificaciones>
+                <tallas><talla>42</talla></tallas>
+                <material>Fibra de carbono</material>
+            </especificaciones>
+        </producto>
+        <producto id="ZAP-005" disponible="false" destacado="false">
+            <nombre>Zapatilla Classic Walk</nombre>
+            <precio moneda="EUR">40.00</precio>
+            <stock>0</stock>
+            <fechaRegistro>2025-01-20</fechaRegistro>
+            <descripcion>Comodidad para el uso diario.</descripcion>
+            <especificaciones>
+                <tallas><talla>39</talla><talla>40</talla></tallas>
+                <material>Cuero sintético</material>
+            </especificaciones>
+        </producto>
+        <producto id="ZAP-006" disponible="true" destacado="false">
+            <nombre>Zapatilla Basket Star</nombre>
+            <precio moneda="EUR">95.00</precio>
+            <stock>12</stock>
+            <fechaRegistro>2025-01-22</fechaRegistro>
+            <descripcion>Amortiguación superior para saltos.</descripcion>
+            <especificaciones>
+                <tallas><talla>44</talla><talla>45</talla></tallas>
+                <material>Sintético reforzado</material>
+            </especificaciones>
+        </producto>
+        <producto id="ZAP-007" disponible="true" destacado="false">
+            <nombre>Zapatilla Tennis Ace</nombre>
+            <precio moneda="EUR">75.00</precio>
+            <stock>14</stock>
+            <fechaRegistro>2025-01-23</fechaRegistro>
+            <descripcion>Gran estabilidad para movimientos laterales.</descripcion>
+            <especificaciones>
+                <tallas><talla>41</talla></tallas>
+                <material>Goma reforzada</material>
+            </especificaciones>
+        </producto>
+        <producto id="ZAP-008" disponible="true" destacado="true">
+            <nombre>Zapatilla Gym Master</nombre>
+            <precio moneda="EUR">80.00</precio>
+            <stock>30</stock>
+            <fechaRegistro>2025-01-24</fechaRegistro>
+            <descripcion>Base plana ideal para levantamiento de pesas.</descripcion>
+            <especificaciones>
+                <tallas><talla>42</talla></tallas>
+                <material>Tela transpirable</material>
+            </especificaciones>
+        </producto>
+        <producto id="ZAP-009" disponible="true" destacado="false">
+            <nombre>Zapatilla Power Lift</nombre>
+            <precio moneda="EUR">150.00</precio>
+            <stock>4</stock>
+            <fechaRegistro>2025-01-25</fechaRegistro>
+            <descripcion>Calzado profesional de halterofilia.</descripcion>
+            <especificaciones>
+                <tallas><talla>43</talla></tallas>
+                <material>Cuero y madera</material>
+            </especificaciones>
+        </producto>
+        <producto id="ZAP-010" disponible="true" destacado="false">
+            <nombre>Zapatilla Cloud Foam</nombre>
+            <precio moneda="EUR">60.00</precio>
+            <stock>25</stock>
+            <fechaRegistro>2025-01-26</fechaRegistro>
+            <descripcion>Tecnología de espuma para pisada suave.</descripcion>
+            <especificaciones>
+                <tallas><talla>40</talla></tallas>
+                <material>Espuma técnica</material>
+            </especificaciones>
+        </producto>
+    </categoria>
+</catalogo>
