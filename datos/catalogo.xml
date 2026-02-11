@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<catalogo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<catalogo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="catalogo.xsd">
     <categoria nombre="Zapatillas">
         <zapatilla id="ZAP-001" disponible="true" destacado="true">
             <nombre>Zapatilla Running Turbo</nombre>
