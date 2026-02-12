@@ -138,4 +138,229 @@
         </zapatilla>
     </categoria>
 
+    <categoria nombre="Ropa">
+        <ropa_deportiva id="ROP-001" disponible="true" destacado="true">
+            <nombre>Camiseta Compresión</nombre>
+            <precio moneda="EUR">24.99</precio>
+            <stock>35</stock>
+            <fechaRegistro>2025-02-01</fechaRegistro>
+            <descripcion>Mejora la circulación muscular durante el entrenamiento.</descripcion>
+            <especificaciones>
+                <tallas><talla>S</talla><talla>M</talla><talla>L</talla></tallas>
+                <material>Poliéster técnico</material>
+            </especificaciones>
+        </ropa_deportiva>
+        <ropa_deportiva id="ROP-002" disponible="true" destacado="false">
+            <nombre>Pantalón Corto Running</nombre>
+            <precio moneda="EUR">19.95</precio>
+            <stock>40</stock>
+            <fechaRegistro>2025-02-01</fechaRegistro>
+            <descripcion>Ligero y transpirable con detalles reflectantes.</descripcion>
+            <especificaciones>
+                <tallas><talla>M</talla><talla>L</talla><talla>XL</talla></tallas>
+                <material>Nailon de secado rápido</material>
+            </especificaciones>
+        </ropa_deportiva>
+        <ropa_deportiva id="ROP-003" disponible="true" destacado="true">
+            <nombre>Sudadera Entrenamiento</nombre>
+            <precio moneda="EUR">39.90</precio>
+            <stock>15</stock>
+            <fechaRegistro>2025-02-01</fechaRegistro>
+            <descripcion>Capa térmica ideal para calentamientos en exterior.</descripcion>
+            <especificaciones>
+                <tallas><talla>L</talla><talla>XL</talla></tallas>
+                <material>Algodón y poliéster</material>
+            </especificaciones>
+        </ropa_deportiva>
+        <ropa_deportiva id="ROP-004" disponible="true" destacado="false">
+            <nombre>Mallas Fit Pro</nombre>
+            <precio moneda="EUR">29.95</precio>
+            <stock>22</stock>
+            <fechaRegistro>2025-02-01</fechaRegistro>
+            <descripcion>Alta elasticidad y costuras planas anti-rozaduras.</descripcion>
+            <especificaciones>
+                <tallas><talla>S</talla><talla>M</talla></tallas>
+                <material>Lycra reforzada</material>
+            </especificaciones>
+        </ropa_deportiva>
+        <ropa_deportiva id="ROP-005" disponible="true" destacado="false">
+            <nombre>Chaqueta Cortavientos</nombre>
+            <precio moneda="EUR">54.99</precio>
+            <stock>10</stock>
+            <fechaRegistro>2025-02-01</fechaRegistro>
+            <descripcion>Protección total contra el viento y lluvia ligera.</descripcion>
+            <especificaciones>
+                <tallas><talla>M</talla><talla>L</talla></tallas>
+                <material>Sintético impermeable</material>
+            </especificaciones>
+        </ropa_deportiva>
+        <ropa_deportiva id="ROP-006" disponible="true" destacado="false">
+            <nombre>Top Deportivo High Support</nombre>
+            <precio moneda="EUR">22.50</precio>
+            <stock>18</stock>
+            <fechaRegistro>2025-02-01</fechaRegistro>
+            <descripcion>Máxima sujeción para deportes de alto impacto.</descripcion>
+            <especificaciones>
+                <tallas><talla>S</talla><talla>M</talla></tallas>
+                <material>Elastano y rejilla</material>
+            </especificaciones>
+        </ropa_deportiva>
+        <ropa_deportiva id="ROP-007" disponible="true" destacado="false">
+            <nombre>Camiseta Térmica Interior</nombre>
+            <precio moneda="EUR">32.00</precio>
+            <stock>30</stock>
+            <fechaRegistro>2025-02-01</fechaRegistro>
+            <descripcion>Mantiene la temperatura corporal en climas gélidos.</descripcion>
+            <especificaciones>
+                <tallas><talla>M</talla><talla>L</talla></tallas>
+                <material>Fibra térmica</material>
+            </especificaciones>
+        </ropa_deportiva>
+        <ropa_deportiva id="ROP-008" disponible="true" destacado="false">
+            <nombre>Pantalón Jogger Fit</nombre>
+            <precio moneda="EUR">34.95</precio>
+            <stock>12</stock>
+            <fechaRegistro>2025-02-01</fechaRegistro>
+            <descripcion>Diseño ergonómico para movilidad total en el gimnasio.</descripcion>
+            <especificaciones>
+                <tallas><talla>L</talla><talla>XL</talla></tallas>
+                <material>Algodón orgánico</material>
+            </especificaciones>
+        </ropa_deportiva>
+        <ropa_deportiva id="ROP-009" disponible="false" destacado="false">
+            <nombre>Bermudas de Tenis</nombre>
+            <precio moneda="EUR">27.00</precio>
+            <stock>0</stock>
+            <fechaRegistro>2025-02-01</fechaRegistro>
+            <descripcion>Bolsillos laterales amplios para pelotas.</descripcion>
+            <especificaciones>
+                <tallas><talla>M</talla><talla>L</talla></tallas>
+                <material>Microfibra elástica</material>
+            </especificaciones>
+        </ropa_deportiva>
+        <ropa_deportiva id="ROP-010" disponible="true" destacado="true">
+            <nombre>Chaleco Reflectante Pro</nombre>
+            <precio moneda="EUR">15.99</precio>
+            <stock>50</stock>
+            <fechaRegistro>2025-02-01</fechaRegistro>
+            <descripcion>Visibilidad 360 grados para corredores nocturnos.</descripcion>
+            <especificaciones>
+                <tallas><talla>Única</talla></tallas>
+                <material>Malla reflectante de alta visibilidad</material>
+            </especificaciones>
+        </ropa_deportiva>
+    </categoria>
+
+    <categoria nombre="Accesorios">
+        <accesorio id="ACC-001" disponible="true" destacado="false">
+            <nombre>Mochila Entrenamiento 25L</nombre>
+            <precio moneda="EUR">34.90</precio>
+            <stock>20</stock>
+            <fechaRegistro>2025-02-05</fechaRegistro>
+            <descripcion>Varios compartimentos con zona estanca para calzado.</descripcion>
+            <especificaciones>
+                <tallaAccs><tallaAcc>Única</tallaAcc></tallaAccs>
+                <material>Poliéster 600D reforzado</material>
+            </especificaciones>
+        </accesorio>
+        <accesorio id="ACC-002" disponible="true" destacado="false">
+            <nombre>Gorra Performance</nombre>
+            <precio moneda="EUR">15.00</precio>
+            <stock>45</stock>
+            <fechaRegistro>2025-02-05</fechaRegistro>
+            <descripcion>Protección solar con rejilla de ventilación superior.</descripcion>
+            <especificaciones>
+                <tallaAccs><tallaAcc>Ajustable</tallaAcc></tallaAccs>
+                <material>Algodón y poliéster</material>
+            </especificaciones>
+        </accesorio>
+        <accesorio id="ACC-003" disponible="true" destacado="true">
+            <nombre>Botella de Agua 1L</nombre>
+            <precio moneda="EUR">12.50</precio>
+            <stock>60</stock>
+            <fechaRegistro>2025-02-05</fechaRegistro>
+            <descripcion>Libre de BPA y con cierre de seguridad hermético.</descripcion>
+            <especificaciones>
+                <tallaAccs><tallaAcc>1 Litro</tallaAcc></tallaAccs>
+                <material>Tritan resistente</material>
+            </especificaciones>
+        </accesorio>
+        <accesorio id="ACC-004" disponible="true" destacado="false">
+            <nombre>Esterilla Yoga Antideslizante</nombre>
+            <precio moneda="EUR">25.99</precio>
+            <stock>15</stock>
+            <fechaRegistro>2025-02-05</fechaRegistro>
+            <descripcion>Gran amortiguación (6mm) y agarre en ambas caras.</descripcion>
+            <especificaciones>
+                <tallaAccs><tallaAcc>180x60cm</tallaAcc></tallaAccs>
+                <material>TPE ecológico</material>
+            </especificaciones>
+        </accesorio>
+        <accesorio id="ACC-005" disponible="true" destacado="true">
+            <nombre>Reloj Deportivo GPS</nombre>
+            <precio moneda="EUR">129.00</precio>
+            <stock>7</stock>
+            <fechaRegistro>2025-02-05</fechaRegistro>
+            <descripcion>Seguimiento de actividad diaria y frecuencia cardíaca.</descripcion>
+            <especificaciones>
+                <tallaAccs><tallaAcc>S/M</tallaAcc><tallaAcc>M/L</tallaAcc></tallaAccs>
+                <material>Silicona y acero inoxidable</material>
+            </especificaciones>
+        </accesorio>
+        <accesorio id="ACC-006" disponible="true" destacado="false">
+            <nombre>Guantes de Gimnasio</nombre>
+            <precio moneda="EUR">18.00</precio>
+            <stock>30</stock>
+            <fechaRegistro>2025-02-05</fechaRegistro>
+            <descripcion>Protección de palmas con inserciones de gel.</descripcion>
+            <especificaciones>
+                <tallaAccs><tallaAcc>M</tallaAcc><tallaAcc>L</tallaAcc></tallaAccs>
+                <material>Cuero y neopreno</material>
+            </especificaciones>
+        </accesorio>
+        <accesorio id="ACC-007" disponible="true" destacado="false">
+            <nombre>Cinta para el Pelo</nombre>
+            <precio moneda="EUR">8.50</precio>
+            <stock>80</stock>
+            <fechaRegistro>2025-02-05</fechaRegistro>
+            <descripcion>Banda elástica absorbente para control del sudor.</descripcion>
+            <especificaciones>
+                <tallaAccs><tallaAcc>Única</tallaAcc></tallaAccs>
+                <material>Tejido de toalla elástico</material>
+            </especificaciones>
+        </accesorio>
+        <accesorio id="ACC-008" disponible="true" destacado="false">
+            <nombre>Calcetines Lana Merino</nombre>
+            <precio moneda="EUR">14.95</precio>
+            <stock>40</stock>
+            <fechaRegistro>2025-02-05</fechaRegistro>
+            <descripcion>Pack de 3 pares reforzados para evitar rozaduras.</descripcion>
+            <especificaciones>
+                <tallaAccs><tallaAcc>39-42</tallaAcc><tallaAcc>43-46</tallaAcc></tallaAccs>
+                <material>Lana merino y elastano</material>
+            </especificaciones>
+        </accesorio>
+        <accesorio id="ACC-009" disponible="true" destacado="false">
+            <nombre>Banda Elástica Resistencia</nombre>
+            <precio moneda="EUR">10.00</precio>
+            <stock>55</stock>
+            <fechaRegistro>2025-02-05</fechaRegistro>
+            <descripcion>Banda circular para tonificación y estiramientos.</descripcion>
+            <especificaciones>
+                <tallaAccs><tallaAcc>Media</tallaAcc></tallaAccs>
+                <material>Látex natural</material>
+            </especificaciones>
+        </accesorio>
+        <accesorio id="ACC-010" disponible="true" destacado="false">
+            <nombre>Cuerda de Saltar Alta Velocidad</nombre>
+            <precio moneda="EUR">19.90</precio>
+            <stock>25</stock>
+            <fechaRegistro>2025-02-05</fechaRegistro>
+            <descripcion>Rodamientos rápidos para entrenamientos de cardio intensos.</descripcion>
+            <especificaciones>
+                <tallaAccs><tallaAcc>Ajustable</tallaAcc></tallaAccs>
+                <material>Cable de acero recubierto</material>
+            </especificaciones>
+        </accesorio>
+    </categoria>
 </catalogo>
