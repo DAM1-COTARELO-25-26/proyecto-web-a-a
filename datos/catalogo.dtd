@@ -1,0 +1,31 @@
+<!ELEMENT catalogo (categoria+)>
+<!ELEMENT categoria (zapatilla* | ropa_deportiva* | accesorio*)>
+<!ATTLIST categoria nombre CDATA #REQUIRED>
+
+<!ELEMENT zapatilla (nombre, precio, stock, fechaRegistro, descripcion, especificaciones)>
+<!ELEMENT ropa_deportiva (nombre, precio, stock, fechaRegistro, descripcion, especificaciones)>
+<!ELEMENT accesorio (nombre, precio, stock, fechaRegistro, descripcion, especificaciones)>
+
+<!ATTLIST zapatilla id ID #REQUIRED disponible (true|false) "true" destacado (true|false) #IMPLIED>
+<!ATTLIST ropa_deportiva id ID #REQUIRED disponible (true|false) "true" destacado (true|false) #IMPLIED>
+<!ATTLIST accesorio id ID #REQUIRED disponible (true|false) "true" destacado (true|false) #IMPLIED>
+
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+<!ATTLIST precio moneda CDATA #FIXED "EUR">
+<!ELEMENT stock (#PCDATA)>
+<!ELEMENT fechaRegistro (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>
+
+<!ELEMENT especificaciones ((tallaZaps | tallas | tallaAccs), material)>
+
+<!ELEMENT tallaZaps (tallaZap+)>
+<!ELEMENT tallaZap (#PCDATA)>
+
+<!ELEMENT tallas (talla+)>
+<!ELEMENT talla (#PCDATA)>
+
+<!ELEMENT tallaAccs (tallaAcc+)>
+<!ELEMENT tallaAcc (#PCDATA)>
+
+<!ELEMENT material (#PCDATA)>
