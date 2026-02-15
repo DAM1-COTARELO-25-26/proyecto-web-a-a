@@ -11,8 +11,8 @@ Este proyecto es una tienda online moderna dedicada a la venta de ropa y equipam
 * **Tipografías**: 
     * **Nitro Chargers**: Utilizada para títulos de alto impacto y secciones destacadas.
     * **Open Sans**: Utilizada para el cuerpo de texto y descripciones por su alta legibilidad.
-* **Paleta de Colores (Luna Of Gale)**: Combinación de tonos azules (Link Water, Pelorous, Biscay) y blancos para un entorno deportivo y limpio.
-  
+* **Paleta de Colores (Luna Of Gale)**: Combinación de tonos azules y blancos para un entorno deportivo y limpio.
+
 ---
 
 ### 🗺️ Mapa del Sitio y Navegación
@@ -23,20 +23,27 @@ El sitio está organizado en las siguientes secciones interconectadas para facil
     * Banner de bienvenida ("Supera Tus Límites").
     * Acceso directo a categorías principales: Running, Fitness y Outdoor.
 2. **Catálogo de Productos**:
-    * **Ropa (`ropa.html`)**: Selección de prendas técnicas con diseño unificado.
-    * **Zapatillas (`zapatillas.html`)**: Calzado especializado para distintas disciplinas.
+    * **Ropa (`ropa.html`)**: Selección de prendas técnicas.
+    * **Zapatillas (`zapatillas.html`)**: Calzado especializado.
     * **Accesorios (`accesorios.html`)**: Equipamiento y complementos deportivos.
 3. **Área de Usuario**:
     * **Login (`login.html`)**: Formulario de acceso para clientes registrados.
 4. **Atención al Cliente**:
-    * **Contacto (`contacto.html`)**: Formulario de consultas y tabla detallada con horarios de apertura.
+    * **Contacto (`contacto.html`)**: Formulario de consultas y horarios de apertura.
 
 ---
 
-### 🚀 Características Implementadas
-* **Diseño Unificado**: Todas las páginas comparten un `header` y `nav` consistentes para una navegación intuitiva.
-* **Catálogo Dinámico**: Uso de cuadrículas automáticas que presentan los productos de forma organizada y profesional.
-* **Interactividad**: Botones con efectos de transición y enlaces corregidos para una navegación sin errores entre secciones.
+### 📊 Estructura de Datos XML (Fase 3)
+El catálogo de productos está gestionado mediante datos estructurados para garantizar la integridad de la información técnica.
+
+* **Ubicación de datos**: Carpeta `/datos/`.
+* **Archivos incluidos**:
+    * `catalogo.xml`: Contiene 30 productos organizados por categorías (Zapatillas, Ropa y Accesorios).
+    * `catalogo.dtd`: Define la estructura y jerarquía de los elementos.
+    * `catalogo.xsd`: Esquema avanzado con validación de tipos de datos y patrones (IDs, precios, stock).
+* **Niveles del árbol XML**: `catalogo` > `categoria` > `zapatilla/ropa_deportiva/accesorio` > `especificaciones`.
+* **Documentación técnica**: [Ver proceso de validación detallado](datos/validacion.md).
 
 ---
+
 **Desarrollado por:** Alberto Rodríguez y Alex Eire (2025).
