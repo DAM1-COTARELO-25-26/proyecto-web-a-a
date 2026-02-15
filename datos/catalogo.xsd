@@ -1,20 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
 
+    <xs:annotation>
+        <xs:documentation>Esquema de validación avanzado para el catálogo de la Tienda de Ropa Deportiva - Fase 3</xs:documentation>
+    </xs:annotation>
+
     <xs:simpleType name="tipoID">
+        <xs:annotation>
+            <xs:documentation>Restricción de ID: 3 letras mayúsculas, guion y 3 números (ej: ZAP-001)</xs:documentation>
+        </xs:annotation>
         <xs:restriction base="xs:string">
             <xs:pattern value="[A-Z]{3}-[0-9]{3}"/>
         </xs:restriction>
     </xs:simpleType>
 
     <xs:simpleType name="tipoPrecio">
+        <xs:annotation>
+            <xs:documentation>Precio decimal no negativo con un máximo de 2 decimales</xs:documentation>
+        </xs:annotation>
         <xs:restriction base="xs:decimal">
             <xs:minInclusive value="0.00"/>
             <xs:fractionDigits value="2"/>
         </xs:restriction>
     </xs:simpleType>
 
-    <xs:complexType name="tipoProducto">
+    <xs:complexType name="tipoProductoBase">
         <xs:sequence>
             <xs:element name="nombre" type="xs:string"/>
             <xs:element name="precio">
@@ -33,9 +43,27 @@
                 <xs:complexType>
                     <xs:sequence>
                         <xs:choice>
-                            <xs:element name="tallaZaps"><xs:complexType><xs:sequence><xs:element name="tallaZap" type="xs:string" maxOccurs="unbounded"/></xs:sequence></xs:complexType></xs:element>
-                            <xs:element name="tallas"><xs:complexType><xs:sequence><xs:element name="talla" type="xs:string" maxOccurs="unbounded"/></xs:sequence></xs:complexType></xs:element>
-                            <xs:element name="tallaAccs"><xs:complexType><xs:sequence><xs:element name="tallaAcc" type="xs:string" maxOccurs="unbounded"/></xs:sequence></xs:complexType></xs:element>
+                            <xs:element name="tallaZaps">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="tallaZap" type="xs:string" maxOccurs="unbounded"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="tallas">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="talla" type="xs:string" maxOccurs="unbounded"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="tallaAccs">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="tallaAcc" type="xs:string" maxOccurs="unbounded"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
                         </xs:choice>
                         <xs:element name="material" type="xs:string"/>
                     </xs:sequence>
@@ -44,7 +72,7 @@
         </xs:sequence>
         <xs:attribute name="id" type="tipoID" use="required"/>
         <xs:attribute name="disponible" type="xs:boolean" use="required"/>
-        <xs:attribute name="destacado" type="xs:boolean"/>
+        <xs:attribute name="destacado" type="xs:boolean" use="required"/>
     </xs:complexType>
 
     <xs:element name="catalogo">
@@ -53,9 +81,9 @@
                 <xs:element name="categoria" maxOccurs="unbounded">
                     <xs:complexType>
                         <xs:choice maxOccurs="unbounded">
-                            <xs:element name="zapatilla" type="tipoProducto"/>
-                            <xs:element name="ropa_deportiva" type="tipoProducto"/>
-                            <xs:element name="accesorio" type="tipoProducto"/>
+                            <xs:element name="zapatilla" type="tipoProductoBase"/>
+                            <xs:element name="ropa_deportiva" type="tipoProductoBase"/>
+                            <xs:element name="accesorio" type="tipoProductoBase"/>
                         </xs:choice>
                         <xs:attribute name="nombre" type="xs:string" use="required"/>
                     </xs:complexType>
@@ -63,4 +91,5 @@
             </xs:sequence>
         </xs:complexType>
     </xs:element>
+
 </xs:schema>
