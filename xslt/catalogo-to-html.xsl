@@ -27,11 +27,14 @@
             </nav>
 
             <main class="contenedor-productos">
-                <h2>Catálogo Completo de Productos</h2>
-                <div class="productos-grid">
-                    <xsl:apply-templates select="catalogo/categoria/*"/>
-                </div>
-            </main>
+    <h2>Catálogo Completo de Productos</h2>
+    <div class="productos-grid">
+        <xsl:apply-templates select="catalogo/categoria/*">
+            <xsl:sort select="precio" data-type="number" order="ascending"/>
+        </xsl:apply-templates>
+    </div>
+</main>
+
 
             <footer>
                 <p>© 2025 Tienda de Ropa Deportiva</p>
