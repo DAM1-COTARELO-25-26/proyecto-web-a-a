@@ -40,8 +40,39 @@
         </body>
         </html>
     </xsl:template>
-
+    
     <xsl:template match="zapatilla | ropa_deportiva | accesorio">
-        </xsl:template>
+        <div class="producto-card">
+            <div class="producto-img">
+                <img style="width:100%; height:100%; object-fit:cover;">
+                    <xsl:attribute name="src">
+                        <xsl:value-of select="concat('images/', local-name(), '.jpg')"/>
+                    </xsl:attribute>
+                    <xsl:attribute name="alt">
+                        <xsl:value-of select="nombre"/>
+                    </xsl:attribute>
+                </img>
+            </div>
+
+            <h3><xsl:value-of select="nombre"/></h3>
+            
+            <p class="precio">
+                <xsl:value-of select="precio"/>
+                <xsl:text> </xsl:text>
+                <xsl:value-of select="precio/@moneda"/>
+            </p>
+
+            <p class="descripcion"><xsl:value-of select="descripcion"/></p>
+            
+            <p><small>Material: <xsl:value-of select="especificaciones/material"/></small></p>
+
+            <button class="cta-button">Añadir al carrito</button>
+        </div>
+    </xsl:template>
+
+
+
+
+    
 
 </xsl:stylesheet>
