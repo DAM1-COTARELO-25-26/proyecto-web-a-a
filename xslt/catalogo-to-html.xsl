@@ -27,14 +27,21 @@
             </nav>
 
             <main class="contenedor-productos">
-    <h2>Catálogo Completo de Productos</h2>
-    <div class="productos-grid">
-        <xsl:apply-templates select="catalogo/categoria/*">
-            <xsl:sort select="precio" data-type="number" order="ascending"/>
-        </xsl:apply-templates>
-    </div>
-</main>
+                <h2>Catálogo Completo de Productos</h2>
+                
+                <div style="text-align:center; margin-bottom: 20px; background: #F2F2F2; padding: 10px; border-radius: 8px;">
+                    <p><strong>Resumen del Inventario:</strong></p>
+                    <span>Total de artículos: <xsl:value-of select="count(//zapatilla | //ropa_deportiva | //accesorio)"/></span>
+                    <xsl:text> | </xsl:text>
+                    <span>Productos en oferta (menos de 20€): <xsl:value-of select="count(//*[precio &lt; 20])"/></span>
+                </div>
 
+                <div class="productos-grid">
+                    <xsl:apply-templates select="catalogo/categoria/*">
+                        <xsl:sort select="precio" data-type="number" order="ascending"/>
+                    </xsl:apply-templates>
+                </div>
+            </main>
 
             <footer>
                 <p>© 2025 Tienda de Ropa Deportiva</p>
@@ -46,6 +53,10 @@
     
     <xsl:template match="zapatilla | ropa_deportiva | accesorio">
         <div class="producto-card">
+            <xsl:if test="precio > 100">
+                <xsl:attribute name="style">border: 2px solid #4AA0C4; transform: scale(1.02);</xsl:attribute>
+            </xsl:if>
+
             <div class="producto-img">
                 <img style="width:100%; height:100%; object-fit:cover;">
                     <xsl:attribute name="src">
@@ -65,17 +76,30 @@
                 <xsl:value-of select="precio/@moneda"/>
             </p>
 
+            <xsl:choose>
+                <xsl:when test="stock = 0">
+                    <p style="color: red; font-weight: bold;">AGOTADO</p>
+                </xsl:when>
+                <xsl:when test="stock &lt; 5">
+                    <p style="color: orange; font-weight: bold;">¡Últimas <xsl:value-of select="stock"/> unidades!</p>
+                </xsl:when>
+                <xsl:otherwise>
+                    <p style="color: green;">Stock disponible: <xsl:value-of select="stock"/></p>
+                </xsl:otherwise>
+            </xsl:choose>
+
             <p class="descripcion"><xsl:value-of select="descripcion"/></p>
             
             <p><small>Material: <xsl:value-of select="especificaciones/material"/></small></p>
 
-            <button class="cta-button">Añadir al carrito</button>
+            <button class="cta-button">
+                <xsl:if test="stock = 0">
+                    <xsl:attribute name="disabled">disabled</xsl:attribute>
+                    <xsl:attribute name="style">background-color: #ccc; cursor: not-allowed;</xsl:attribute>
+                </xsl:if>
+                Añadir al carrito
+            </button>
         </div>
     </xsl:template>
-
-
-
-
-    
 
 </xsl:stylesheet>
