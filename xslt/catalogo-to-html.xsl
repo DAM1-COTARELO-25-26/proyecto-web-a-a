@@ -26,22 +26,33 @@
                 <a href="accesorios.html">Accesorios</a>
             </nav>
 
-            <main class="contenedor-productos">
-                <h2>Catálogo Completo de Productos</h2>
-                
-                <div style="text-align:center; margin-bottom: 20px; background: #F2F2F2; padding: 10px; border-radius: 8px;">
-                    <p><strong>Resumen del Inventario:</strong></p>
-                    <span>Total de artículos: <xsl:value-of select="count(//zapatilla | //ropa_deportiva | //accesorio)"/></span>
-                    <xsl:text> | </xsl:text>
-                    <span>Productos en oferta (menos de 20€): <xsl:value-of select="count(//*[precio &lt; 20])"/></span>
-                </div>
+           <main class="contenedor-productos">
+    <h2>Catálogo Completo de Productos</h2>
 
-                <div class="productos-grid">
-                    <xsl:apply-templates select="catalogo/categoria/*">
-                        <xsl:sort select="precio" data-type="number" order="ascending"/>
-                    </xsl:apply-templates>
-                </div>
-            </main>
+    <section class="destacados" style="margin-bottom: 40px; padding: 20px; border: 1px dashed #1D3A6D;">
+        <h3> Productos Destacados</h3>
+        <ul style="list-style: none; display: flex; gap: 20px; justify-content: center; padding: 0;">
+            <xsl:for-each select="catalogo/categoria/*[@destacado='true']">
+                <li style="background: #D6E4F5; padding: 10px; border-radius: 5px;">
+                    <strong><xsl:value-of select="nombre"/></strong> - 
+                    <span><xsl:value-of select="precio"/>€</span>
+                </li>
+            </xsl:for-each>
+        </ul>
+    </section>
+
+    <div style="text-align:center; margin-bottom: 20px; background: #F2F2F2; padding: 10px; border-radius: 8px;">
+        <p><strong>Resumen del Inventario:</strong></p>
+        <span>Total de artículos: <xsl:value-of select="count(//zapatilla | //ropa_deportiva | //accesorio)"/></span>
+    </div>
+
+    <div class="productos-grid">
+        <xsl:apply-templates select="catalogo/categoria/*">
+            <xsl:sort select="precio" data-type="number" order="ascending"/>
+        </xsl:apply-templates>
+    </div>
+</main>
+
 
             <footer>
                 <p>© 2025 Tienda de Ropa Deportiva</p>
