@@ -71,4 +71,8 @@ En esta fase, el catálogo de productos se ha dinamizado mediante tecnologías d
 1. **Navegador**: Abrir directamente el archivo `datos/catalogo.xml` en un navegador compatible (Chrome, Edge o Firefox).
 2. [cite_start]**GitHub Pages**: Acceder a la web desplegada y pulsar en el enlace **"Ver Catálogo (XSLT)"** del menú de navegación.
 
+### Capturas de Pantalla
+![Catálogo Generado](images/catalogo-generado.png)
+![Pruebas XPath](images/xpath-testing.png)
+
 **Desarrollado por:** Alberto Rodríguez y Alex Eire (2025).

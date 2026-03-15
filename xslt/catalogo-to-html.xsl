@@ -78,7 +78,7 @@
             <div class="producto-img">
                 <img style="width:100%; height:100%; object-fit:cover;">
                     <xsl:attribute name="src">
-                        <xsl:value-of select="concat('../images/', local-name(), '.jpg')"/>
+                        <xsl:value-of select="concat('../images/', local-name(), '.png')"/>
                     </xsl:attribute>
                     <xsl:attribute name="alt">
                         <xsl:value-of select="nombre"/>
