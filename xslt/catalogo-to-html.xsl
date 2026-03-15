@@ -20,10 +20,10 @@
             </header>
 
             <nav>
-                <a href="index.html">Inicio</a>
-                <a href="ropa.html">Ropa</a>
-                <a href="zapatillas.html">Zapatillas</a>
-                <a href="accesorios.html">Accesorios</a>
+                <a href="../index.html">Inicio</a>
+                <a href="../ropa.html">Ropa</a>
+                <a href="../zapatillas.html">Zapatillas</a>
+                <a href="../accesorios.html">Accesorios</a>
             </nav>
 
            <main class="contenedor-productos">
