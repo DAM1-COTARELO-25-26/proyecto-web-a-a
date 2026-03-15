@@ -46,4 +46,29 @@ El catálogo de productos está gestionado mediante datos estructurados para gar
 
 ---
 
+## 🔄 Fase 4: Transformación XSLT y Consultas XPath
+
+En esta fase, el catálogo de productos se ha dinamizado mediante tecnologías de transformación y consulta de datos.
+
+### 📄 Archivos Involucrados
+* [cite_start]**XML**: `datos/catalogo.xml` (Contiene la fuente de datos con la hoja de estilo vinculada)[cite: 80].
+* [cite_start]**XSLT**: `xslt/catalogo-to-html.xsl` (Define las reglas de transformación a HTML5)[cite: 79].
+* [cite_start]**Consultas**: `datos/consultas-xpath.md` (Documentación de 10 consultas técnicas)[cite: 81].
+
+### 🛠️ Funcionalidades XSLT Implementadas
+[cite_start]Se han aplicado los siguientes elementos y técnicas avanzadas de transformación[cite: 27, 36]:
+1. [cite_start]**Plantillas (`xsl:template`)**: Múltiples plantillas para organizar la estructura raíz y los artículos[cite: 28].
+2. [cite_start]**Ordenación (`xsl:sort`)**: Los productos se muestran ordenados automáticamente por precio de menor a mayor[cite: 32].
+3. [cite_start]**Iteración (`xsl:for-each`)**: Implementación de una sección dinámica de "Productos Destacados"[cite: 30].
+4. **Lógica Condicional (`xsl:choose` / `xsl:if`)**: 
+   - Gestión de stock con mensajes de "AGOTADO" o "Últimas unidades".
+   - Deshabilitación automática del botón de compra si no hay existencias.
+5. [cite_start]**Formato Condicional**: Resaltado visual de productos de alta gama (precio > 100€) mediante atributos dinámicos[cite: 37].
+6. [cite_start]**Cálculos Estadísticos**: Uso de funciones `count()` para mostrar el total de productos en tiempo real[cite: 37].
+
+### 🚀 Cómo visualizar la transformación
+[cite_start]Para ejecutar la transformación y ver el catálogo generado, existen dos opciones[cite: 75]:
+1. **Navegador**: Abrir directamente el archivo `datos/catalogo.xml` en un navegador compatible (Chrome, Edge o Firefox).
+2. [cite_start]**GitHub Pages**: Acceder a la web desplegada y pulsar en el enlace **"Ver Catálogo (XSLT)"** del menú de navegación.
+
 **Desarrollado por:** Alberto Rodríguez y Alex Eire (2025).
