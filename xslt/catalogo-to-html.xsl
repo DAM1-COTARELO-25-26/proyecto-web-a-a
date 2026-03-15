@@ -8,7 +8,7 @@
         <head>
             <meta charset="UTF-8"/>
             <title>Catálogo Dinámico - Tienda de Ropa Deportiva</title>
-            <link rel="stylesheet" type="text/css" href="css/style.css"/>
+            <link rel="stylesheet" type="text/css" href="../css/style.css"/>
         </head>
         <body>
             <header>
@@ -28,6 +28,13 @@
 
            <main class="contenedor-productos">
     <h2>Catálogo Completo de Productos</h2>
+
+    <div class="productos-grid">
+        <xsl:apply-templates select="catalogo/categoria/*">
+            <xsl:sort select="precio" data-type="number" order="ascending"/>
+        </xsl:apply-templates>
+    </div>
+
 
     <section class="destacados" style="margin-bottom: 40px; padding: 20px; border: 1px dashed #1D3A6D;">
         <h3> Productos Destacados</h3>
@@ -71,7 +78,7 @@
             <div class="producto-img">
                 <img style="width:100%; height:100%; object-fit:cover;">
                     <xsl:attribute name="src">
-                        <xsl:value-of select="concat('images/', local-name(), '.jpg')"/>
+                        <xsl:value-of select="concat('../images/', local-name(), '.jpg')"/>
                     </xsl:attribute>
                     <xsl:attribute name="alt">
                         <xsl:value-of select="nombre"/>
